@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Indicator from "../components/Indicator";
 import Wallet from "../components/SVG's/Wallet";
 import Graph from "../components/SVG's/Graph";
 import Container from "../components/Container";
-// import {LabeledSwitch} from '@aave/aave-ui-kit';
-import "../css/Dashboard.css";
 import ToggleContainerSupply from './../components/ToggleContainerSupply';
 import ToggleContainerBorrow from './../components/ToggleContainerBorrow';
+import { DataBorrow,DataSupply } from "../Data";
+import "../css/Dashboard.css";
 
 const Dashboard = () => {
+
+  useEffect(() => {
+    console.log("we can make api request here...");
+  }, []);
+
   return (
     <>
-    {/* upper div with indicators */}
+      {/* upper div with indicators */}
       <div className="d-flex flex-column align-items-center">
         <div className="global_upper_container d-flex align-items-center justify-content-center">
           <div className="d-flex flex-column" style={{ width: '90%' }}>
@@ -30,19 +35,17 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* labeled switch for small to larger devices */}
-        {/* <LabeledSwitch value={true} leftOption="Supply" rightOption="Borrow" width="300" height="50" /> */}
 
         <div className="d-flex flex-xl-row flex-column" style={{ width: '90%', position: 'relative', zIndex: '1', marginTop: '-30px' }}>
           {/* supply assets */}
           <div className="supply">
             <Container />
-            <ToggleContainerSupply id="supply" />
+            <ToggleContainerSupply id="supply" data={DataSupply} />
           </div>
           {/* borrow assets */}
           <div className="borrow">
             <Container />
-            <ToggleContainerBorrow id="borrow" />
+            <ToggleContainerBorrow id="borrow" data={DataBorrow} />
           </div>
         </div>
       </div>

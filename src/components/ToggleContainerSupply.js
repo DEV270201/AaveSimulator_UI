@@ -1,9 +1,8 @@
 import React, { useRef } from "react";
 import Alert from "./Alert";
 import DashCryptoStatusSupply from "./DashCryptoStatusSupply";
-import {DataSupply} from "../Data";
 
-const ToggleContainerSupply = ({ id }) => {
+const ToggleContainerSupply = ({ id,data }) => {
     const btnRef = useRef(null);
     const isCollapseOpen = useRef(false);
 
@@ -38,7 +37,7 @@ const ToggleContainerSupply = ({ id }) => {
                     </div>
                     <div className="my-2">
                         {
-                            DataSupply.map((data,index)=>{
+                            data.map((data,index)=>{
                                return <DashCryptoStatusSupply data={data} key={index}/>
                             })
                         }

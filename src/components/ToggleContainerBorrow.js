@@ -1,9 +1,8 @@
 import React, { useRef } from "react";
 import Alert from "./Alert";
-import {DataBorrow} from "../Data";
 import DashCryptoStatusBorrow from './DashCryptoStatusBorrow';
 
-const ToggleContainerBorrow = ({ id }) => {
+const ToggleContainerBorrow = ({ id,data }) => {
     const btnRef = useRef(null);
     const isCollapseOpen = useRef(false);
 
@@ -38,7 +37,7 @@ const ToggleContainerBorrow = ({ id }) => {
                     </div>
                     <div className="my-2">
                         {
-                            DataBorrow.map((data,index)=>{
+                            data.map((data,index)=>{
                                return <DashCryptoStatusBorrow data={data} key={index}/>
                             })
                         }

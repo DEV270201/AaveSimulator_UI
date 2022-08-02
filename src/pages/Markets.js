@@ -1,11 +1,17 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Indicator from "../components/Indicator";
 import Available from "../components/SVG's/Available";
 import PieChart from "../components/SVG's/PieChart";
 import Borrow from "../components/SVG's/Borrow";
 import ContainerMarket from "../components/ContainerMarket";
+import { DataMarket } from "../Data";
 
 const Markets = () => {
+
+  useEffect(()=>{
+      console.log("we can make api request here...");
+  },[]);
+
   return (
     <>
     {/* upper div with indicators */}
@@ -31,7 +37,7 @@ const Markets = () => {
 
         {/* market container */}
         <div className="d-flex" style={{ width: '90%', position: 'relative', zIndex: '1'}}>
-          <ContainerMarket />
+          <ContainerMarket data={DataMarket}/>
         </div>
       </div>
     </>

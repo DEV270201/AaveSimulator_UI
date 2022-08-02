@@ -1,8 +1,7 @@
 import React from "react";
 import MarketCryptoStatus from "./MarketCryptoStatus";
-import { DataMarket } from "../Data";
 
-const ContainerMarket = () => {
+const ContainerMarket = ({data}) => {
     return (
         <>
             <div className="global_crypto_container" style={{width:'100%',zIndex:'1',backgroundColor:'white',marginTop:'-30px'}}>
@@ -18,7 +17,7 @@ const ContainerMarket = () => {
                 </div>
                 <div className="my-2">
                     {
-                        DataMarket.map((data, index) => {
+                        data.map((data, index) => {
                             return <MarketCryptoStatus data={data} key={index} />
                         })
                     }
