@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const DashCryptoStatusSupply = ({data}) => {
 
@@ -21,8 +22,8 @@ const DashCryptoStatusSupply = ({data}) => {
                     <div className="fs-6" style={{width:'25%'}}>{data.collateral}</div>
                 </div>
                 <div className="" style={{width:'30%'}}>
-                <button className="btn btn-outline-primary mx-1" style={{width:'45%'}} onClick={myfunc}>Supply</button>
-                <button className="btn btn-outline-primary" style={{width:'45%'}}>Details</button>
+                <Button func={myfunc} width="45" disabled={true} text="Supply" className="mx-1"/>
+                <Button func={myfunc} width="45" text="Details"/>
                 </div>
             </div>
 
@@ -50,8 +51,8 @@ const DashCryptoStatusSupply = ({data}) => {
                     <div>{data.collateral}</div>
                 </div>
                 <div className="d-flex my-1">
-                    <button className="btn btn-outline-primary mx-1" style={{ width: '50%' }} onClick={myfunc} >Supply</button>
-                    <button className="btn btn-outline-primary" style={{ width: '50%' }}>Details</button>
+                <Button func={myfunc} width="50" disabled={true} text="Supply" className="mx-1"/>
+                <Button func={myfunc} width="50" text="Details"/>
                 </div>
             </div>
         </>

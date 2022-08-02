@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const DashCryptoStatusBorrow = ({ data }) => {
 
@@ -49,7 +50,7 @@ const DashCryptoStatusBorrow = ({ data }) => {
                     </div>
                 </div>
                 <div className="" style={{ width: '10%' }}>
-                    <button className="btn btn-outline-primary mx-1" style={{ width: '85%' }} onClick={myfunc}>Details</button>
+                <Button func={myfunc} width="85" text="Details" className="mx-1"/>
                 </div>
             </div>
 
@@ -107,7 +108,7 @@ const DashCryptoStatusBorrow = ({ data }) => {
                     </div>
                 </div>
                 <div className="d-flex my-1 justify-content-center">
-                    <button className="btn btn-outline-primary mx-1" style={{ width: '85%' }} onClick={myfunc} >Details</button>
+                      <Button func={myfunc} width="85" text="Details"/>
                 </div>
             </div>
         </>

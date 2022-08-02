@@ -30,7 +30,7 @@ const ToggleContainerBorrow = ({ id }) => {
                         <Alert bgColor="#e5effb" infoColor="#0062D2" text="To borrow you need to supply any asset to be used as collateral."/>
                     </div>
                     {/* for medium to xl devices */}
-                    <div className="sticky-top d-none d-md-flex justify-content-between text-center mt-3" style={{width:'70%',backgroundColor:'white'}}>
+                    <div className="sticky-top d-none d-md-flex justify-content-between text-center mt-3" style={{width:'70%',backgroundColor:'white',position:'sticky',top:'50px'}}>
                         <div className="global_sticky_marks" style={{width:'25%'}}>Assets</div>
                         <div className="global_sticky_marks" style={{width:'25%'}}>Available</div>
                         <div className="global_sticky_marks" style={{width:'25%'}}>APY,variable</div>
