@@ -7,7 +7,18 @@
     position: fixed;
     top: 0%;
     left: 0%;
-    z-index: 10;
+    z-index: 100;
     border-bottom: 1px solid rgb(107, 106, 106);
     padding: 0px 15px;
+}
+
+.menuBtn{
+    background-color: #383D51;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.menuBtn:hover{
+    cursor: pointer;
+    background-color: #2B2D3C;
 }
