@@ -1,0 +1,8 @@
+.mobile_nav{
+    height: 93vh;
+    width: 100%;
+    background-color: #2B2D3C;
+    top: -100%;
+    position: fixed;
+    z-index: 100;
+}
