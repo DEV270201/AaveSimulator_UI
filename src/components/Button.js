@@ -3,6 +3,7 @@ import React from "react";
 const Button = ({disabled=false,text="Click",func,width,backgroundColor="#f7f7f9",textColor="383d51",className=""})=>{
 
    const execute_func = ()=>{
+    console.log("clicked");
      func();
    }
 

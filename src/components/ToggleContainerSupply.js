@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import Alert from "./Alert";
 import DashCryptoStatusSupply from "./DashCryptoStatusSupply";
 
@@ -14,6 +14,10 @@ const ToggleContainerSupply = ({ id,data }) => {
             btnRef.current.textContent = 'Show +';
         }
     }
+
+    useEffect(()=>{
+        console.log("supply");   
+    });
 
     return (
         <>

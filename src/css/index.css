@@ -21,11 +21,11 @@ code {
 /* Global CSS goes here.... */
 
 .global_upper_container{
-  height: 290px;
+  height: 320px;
   width: 100%;
   position: relative;
   background-color: #2B2D3C;
-  z-index: -1;
+  padding: 10px;
 }
 
 .global_crypto_container{
@@ -42,4 +42,9 @@ code {
 
 .global_sticky_marks{
   font-size: 12px;
+}
+
+.global_drop_listitem:hover{
+  cursor: pointer;
+  background-color: rgb(211, 211, 211);
 }

@@ -12,13 +12,13 @@
     padding: 0px 15px;
 }
 
-.menuBtn{
+.navBtn{
     background-color: #383D51;
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
 }
 
-.menuBtn:hover{
+.navBtn:hover{
     cursor: pointer;
     background-color: #2B2D3C;
 }

@@ -4,6 +4,7 @@ import Available from "../components/SVG's/Available";
 import PieChart from "../components/SVG's/PieChart";
 import Borrow from "../components/SVG's/Borrow";
 import ContainerMarket from "../components/ContainerMarket";
+import Dropdown from "../components/Dropdown";
 import { DataMarket } from "../Data";
 
 const Markets = () => {
@@ -22,7 +23,18 @@ const Markets = () => {
               <div className="fs-5 d-block d-md-none fw-bold" style={{ color: '#A5A8B6' }}>Markets</div>
               <div className="d-flex align-items-center">
                 <img src="https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/ZJZZK5B2ZNF25LYQHMUTBTOMLU.png" height="30px" width="30px" alt="" />
-                <h2 className="fw-bold text-light mx-1">Ethereum Market</h2>
+                <h3 className="fw-bold text-light mx-1">
+                  <Dropdown selectedVal={"Ethereum Market"} list={[
+                    {
+                      imgUrl: "https://dual.cafeswap.finance/images/tokens/busd.png",
+                      name: 'Binance USD'
+                    },
+                    {
+                      imgUrl: "https://dual.cafeswap.finance/images/tokens/busd.png",
+                      name: 'Binance USD'
+                    }
+                  ]} />
+                </h3>
               </div>
             </div>
 

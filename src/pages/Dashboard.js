@@ -5,7 +5,8 @@ import Graph from "../components/SVG's/Graph";
 import Container from "../components/Container";
 import ToggleContainerSupply from './../components/ToggleContainerSupply';
 import ToggleContainerBorrow from './../components/ToggleContainerBorrow';
-import { DataBorrow,DataSupply } from "../Data";
+import { DataBorrow, DataSupply } from "../Data";
+import Dropdown from "../components/Dropdown";
 import "../css/Dashboard.css";
 
 const Dashboard = () => {
@@ -13,6 +14,10 @@ const Dashboard = () => {
   useEffect(() => {
     console.log("we can make api request here...");
   }, []);
+
+  useEffect(() => {
+    console.log("we...");
+  });
 
   return (
     <>
@@ -24,7 +29,18 @@ const Dashboard = () => {
               <div className="fs-5 d-block d-md-none fw-bold" style={{ color: '#A5A8B6' }}>Dashboard</div>
               <div className="d-flex align-items-center">
                 <img src="https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/ZJZZK5B2ZNF25LYQHMUTBTOMLU.png" height="30px" width="30px" alt="" />
-                <h2 className="fw-bold text-light mx-1">Ethereum Market</h2>
+                <h3 className="fw-bold text-light mx-1">
+                  <Dropdown selectedVal={"Ethereum Market"} list={[
+                    {
+                      imgUrl: "https://dual.cafeswap.finance/images/tokens/busd.png",
+                      name: 'Binance USD'
+                    },
+                    {
+                      imgUrl: "https://dual.cafeswap.finance/images/tokens/busd.png",
+                      name: 'Binance USD'
+                    }
+                  ]} />
+                </h3>
               </div>
             </div>
             {/* indicators */}
