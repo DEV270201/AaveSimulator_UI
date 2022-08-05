@@ -35,6 +35,8 @@ const ToggleContainerBorrow = ({ id,data }) => {
                         <div className="global_sticky_marks" style={{width:'25%'}}>APY,variable</div>
                         <div className="global_sticky_marks" style={{width:'25%'}}>APY,stable</div>
                     </div>
+
+                    {/* mapping all the data */}
                     <div className="my-2">
                         {
                             data.map((data,index)=>{

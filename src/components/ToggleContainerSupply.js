@@ -1,4 +1,4 @@
-import React, { useRef,useEffect } from "react";
+import React, { useRef } from "react";
 import Alert from "./Alert";
 import DashCryptoStatusSupply from "./DashCryptoStatusSupply";
 
@@ -14,10 +14,6 @@ const ToggleContainerSupply = ({ id,data }) => {
             btnRef.current.textContent = 'Show +';
         }
     }
-
-    useEffect(()=>{
-        console.log("supply");   
-    });
 
     return (
         <>
@@ -39,6 +35,8 @@ const ToggleContainerSupply = ({ id,data }) => {
                         <div className="global_sticky_marks" style={{width:'25%'}}>APY</div>
                         <div className="global_sticky_marks" style={{width:'25%'}}>Can be collateral</div>
                     </div>
+
+                    {/* mapping all the data */}
                     <div className="my-2">
                         {
                             data.map((data,index)=>{

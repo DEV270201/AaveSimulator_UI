@@ -9,6 +9,7 @@ const App = ()=>{
     <>
     {/* for larger devices */}
     <Navbar />
+    
     <Routes>
       <Route path="/" exact element={<Dashboard />} />
       <Route path="/markets" exact element={<Markets />} />

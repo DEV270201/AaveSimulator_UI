@@ -15,10 +15,6 @@ const Dashboard = () => {
     console.log("we can make api request here...");
   }, []);
 
-  useEffect(() => {
-    console.log("we...");
-  });
-
   return (
     <>
       {/* upper div with indicators */}
