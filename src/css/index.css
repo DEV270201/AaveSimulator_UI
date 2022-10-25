@@ -48,3 +48,11 @@ code {
   cursor: pointer;
   background-color: rgb(211, 211, 211);
 }
+
+.footer{
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
